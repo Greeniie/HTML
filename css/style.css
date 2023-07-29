@@ -336,15 +336,16 @@ fieldset[disabled] .s-btn {
   Clients v1
 ------------------------------------*/
 .s-clients-v1 {
-  display: block;
-  width: 6.25rem;
-  height: auto;
+  width: 10%;
+  height: 10%;
   margin: 0 auto;
   opacity: 1;
   cursor: pointer;
-  transition-duration: 200ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  object-fit: contain;
+}
+
+.client {
+  padding-top: 50px;
 }
 
 .s-clients-v1:hover {
@@ -2373,3 +2374,19 @@ fieldset[disabled] .s-btn {
 .s-swiper__pagination-v1--dark .swiper-pagination-bullet-active {
   background: #000;
 }
+
+
+.carousel-container {
+  width: 90%;
+  margin: auto;
+}
+
+.carousell {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

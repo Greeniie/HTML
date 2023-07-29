@@ -18,35 +18,39 @@ $(window).load(function(){
   });
 
   // Swiper Clients
-  var swiper = new Swiper('.js__swiper-clients', {
-    slidesPerView: 6,
+  var swiper = new Swiper('.js__swiper-clients', { // Use "s-swiper" as the selector
+    slidesPerView: 5,
     spaceBetween: 50,
-    speed: 100000,
-    autoplay: 7000,
+    speed: 1000,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+    },
     loop: true,
     breakpoints: {
       1024: {
         slidesPerView: 6,
-        spaceBetween: 50
+        spaceBetween: 50,
       },
       992: {
         slidesPerView: 3,
-        spaceBetween: 40
+        spaceBetween: 40,
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       600: {
         slidesPerView: 2,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       480: {
         slidesPerView: 2,
-        spaceBetween: 0
-      }
-    }
+        spaceBetween: 0,
+      },
+    },
   });
+  
 
   // Swiper News
   var swiper = new Swiper('.js__swiper-news', {
