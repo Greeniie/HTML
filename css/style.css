@@ -336,9 +336,10 @@ fieldset[disabled] .s-btn {
   Clients v1
 ------------------------------------*/
 .s-clients-v1 {
-  width: 10%;
-  height: 10%;
-  margin: 0 auto;
+ max-height: 150px;
+ margin-right: 30px;
+ margin-bottom: 20px;
+ width: auto;
   opacity: 1;
   cursor: pointer;
   object-fit: contain;
